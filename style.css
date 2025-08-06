@@ -1,89 +1,64 @@
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  font-family: 'Inter', 'Segoe UI', sans-serif;
-}
-
-body {
-  background-color: #f4f5f7;
-  color: #2d2d2d;
-  padding: 24px;
-}
-
-header {
-  text-align: center;
-  margin-bottom: 40px;
-}
-
-header h1 {
-  font-size: 2rem;
-  color: #1f1f1f;
-  margin-bottom: 10px;
-}
-
-header p {
-  color: #555;
-  font-size: 1rem;
-}
-
-.product-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 24px;
-}
-
 .product-card {
-  background-color: #ffffff;
-  padding: 18px;
+  background-color: #f0f2f5; /* soft gray instead of white */
   border-radius: 16px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
 .product-card:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.08);
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
 }
 
 .product-card img {
   width: 100%;
+  max-width: 200px;
   height: auto;
-  border-radius: 10px;
-  margin-bottom: 14px;
+  border-radius: 12px;
+  margin-bottom: 16px;
 }
 
-.product-card h2 {
-  font-size: 1.05rem;
-  margin-bottom: 6px;
-  color: #111;
+.product-card h3 {
+  font-size: 1rem;
+  margin: 10px 0;
+  color: #222;
 }
 
-.product-card p {
-  font-size: 0.95rem;
+.product-card .price {
+  font-weight: bold;
+  color: #1e293b;
+  margin-bottom: 8px;
+}
+
+.product-card .rating {
+  font-size: 0.9rem;
   color: #555;
-  margin-bottom: 14px;
+  margin-bottom: 10px;
 }
 
-.product-card a {
-  display: inline-block;
-  background-color: #3b82f6; /* Soft blue */
+.product-card .prime-badge {
+  color: #2563eb;
+  font-size: 0.85rem;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.product-card .buy-btn {
+  background-color: #3b82f6;
   color: white;
   padding: 10px 16px;
+  border: none;
   border-radius: 8px;
   text-decoration: none;
-  font-weight: 500;
+  font-weight: 600;
   transition: background 0.3s ease;
-  text-align: center;
 }
 
-.product-card a:hover {
+.product-card .buy-btn:hover {
   background-color: #2563eb;
-}
-
-footer {
-  text-align: center;
-  margin-top: 50px;
-  color: #999;
-  font-size: 0.9rem;
 }
