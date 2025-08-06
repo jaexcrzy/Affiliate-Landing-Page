@@ -43,28 +43,6 @@ document.addEventListener("DOMContentLoaded", () => {
       price: "$19.99"
     
     
-    },
-    {
-    name: "kindle Paperwhite",
-      image: "https://m.media-amazon.com/images/I/61RHOZZgrlL._AC_SX679_.jpg",
-      link: "https://www.amazon.com/dp/B08KTZ8249",
-      rating: 4.5,
-      reviews: "45,673",
-      prime: false,
-      price: "$179.99"
-    
-    
-
-    },
-    {
-    name: "Roku Streaming Stick 4k",
-      image: "https://m.media-amazon.com/images/I/61RHOZZgrlL._AC_SX679_.jpg",
-      link: "https://www.amazon.com/dp/B08xvyz1y5/",
-      rating: 4.5,
-      reviews: "45,673",
-      prime: false,
-      price: "$179.99"
-    
     
     
     
