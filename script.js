@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
   const timerEl = document.getElementById("timer");
-  let countdown = 60 * 60 * 3;
+  let countdown = 60 * 60 * 3; // 3 hours
 
   function updateCountdown() {
     const h = String(Math.floor(countdown / 3600)).padStart(2, "0");
@@ -41,11 +41,6 @@ document.addEventListener("DOMContentLoaded", () => {
       reviews: "45,673",
       prime: false,
       price: "$19.99"
-    
-    
-    
-    
-    
     }
   ];
 
